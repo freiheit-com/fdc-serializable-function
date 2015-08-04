@@ -9,10 +9,8 @@ project.version.with { major = 8; minor= 0; patch = 0; releaseBuild = true}
 
 sourceCompatibility = 1.8
 
-sourceSets {
-    main {
-        java { srcDir 'src' }
-    }
+dependencies {
+    testCompile fileTree( dir: 'lib/test', include: '*.jar' )
 }
 
 jar {
@@ -25,5 +23,9 @@ task sourcesJar(type: Jar, dependsOn: classes) {
     classifier = 'sources'
     from sourceSets.main.allSource
 }
+
+test {
+    useJUnit()
+  }
 
 task wrapper(type: Wrapper) { gradleVersion = '2.5' }
