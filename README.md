@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/freiheit-com/fdc-serializable-function.svg?branch=master)](https://travis-ci.org/freiheit-com/fdc-serializable-function)
+
 # fdc-serializable-function
 Mirror of java.util.function with every interface also extending Serializable
 
