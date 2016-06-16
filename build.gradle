@@ -16,6 +16,7 @@ apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
 apply plugin: "com.jfrog.artifactory"
 
+project.group 'com.freiheit'
 project.version.with { major = 8; minor= 0; patch = 0; releaseBuild = true}
 
 sourceCompatibility = 1.8
